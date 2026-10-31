@@ -18,13 +18,13 @@ RewriteRule ^data/original$ https://gitlab.utwente.nl/s2987716/fair-project/-/bl
 
 # Database metadata schema
 RewriteCond %{HTTP_ACCEPT} text/turtle [NC]
-RewriteRule ^metadata/dataset/schema$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/schema.ttl [R=303,L]
-RewriteRule ^metadata/dataset/schema$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/schema.ttl [R=303,L]
+RewriteRule ^metadata/schema$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/schema.ttl [R=303,L]
+RewriteRule ^metadata/schema$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/schema.ttl [R=303,L]
 
 # Dataset metadata
 RewriteCond %{HTTP_ACCEPT} text/turtle [NC]
-RewriteRule ^metadata/dataset$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/dataset.ttl [R=303,L]
-RewriteRule ^metadata/dataset$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/dataset.ttl [R=303,L]
+RewriteRule ^metadata$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/dataset.ttl [R=303,L]
+RewriteRule ^metadata$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/dataset.ttl [R=303,L]
 
 # Distribution metadata schema
 RewriteCond %{HTTP_ACCEPT} text/turtle [NC]
@@ -33,8 +33,8 @@ RewriteRule ^metadata/distribution/schema$ https://gitlab.utwente.nl/s2987716/fa
 
 # FAIRified data distribution
 RewriteCond %{HTTP_ACCEPT} text/turtle [NC]
-RewriteRule ^metadata/distribution/fair$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/distribution/fair.ttl [R=303,L]
-RewriteRule ^metadata/distribution/fair$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/distribution/fair.ttl [R=303,L]
+RewriteRule ^metadata/distribution/data$ https://gitlab.utwente.nl/s2987716/fair-project/-/raw/main/metadata/distribution/fair.ttl [R=303,L]
+RewriteRule ^metadata/distribution/data$ https://gitlab.utwente.nl/s2987716/fair-project/-/blob/main/metadata/distribution/fair.ttl [R=303,L]
 
 # Original data distribution
 RewriteCond %{HTTP_ACCEPT} text/turtle [NC]
